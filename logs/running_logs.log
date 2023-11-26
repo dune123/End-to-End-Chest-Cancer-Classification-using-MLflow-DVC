@@ -8,3 +8,36 @@
 [2023-11-25 11:47:53,552: INFO: common: created directory at: artifacts/data_ingestion]
 [2023-11-25 11:47:53,552: INFO: 4015487516: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2023-11-25 11:48:01,381: INFO: 4015487516: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-11-26 10:27:09,560: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-11-26 10:27:09,563: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-26 10:27:09,564: INFO: common: created directory at: artifacts]
+[2023-11-26 10:27:09,565: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-11-26 10:27:09,919: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-11-26 10:27:09,980: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2023-11-26 11:05:05,380: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-26 11:05:05,381: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-11-26 11:05:05,382: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-26 11:05:05,382: INFO: common: created directory at: artifacts]
+[2023-11-26 11:05:05,382: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-26 11:05:05,382: ERROR: main: makedirs() got an unexpected keyword argument 'exists_ok']
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Chest-Cancer-Classification-using-MLflow-DVC/main.py", line 10, in <module>
+    obj.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Chest-Cancer-Classification-using-MLflow-DVC/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Chest-Cancer-Classification-using-MLflow-DVC/src/cnnClassifier/components/data_ingestion.py", line 29, in download_file
+    raise e
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Chest-Cancer-Classification-using-MLflow-DVC/src/cnnClassifier/components/data_ingestion.py", line 19, in download_file
+    os.makedirs("artifacts/data_ingestion",exists_ok=True)
+TypeError: makedirs() got an unexpected keyword argument 'exists_ok'
+[2023-11-26 11:05:20,277: INFO: main: *******************]
+[2023-11-26 11:05:20,277: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-11-26 11:05:20,278: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-11-26 11:05:20,278: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-26 11:05:20,278: INFO: common: created directory at: artifacts]
+[2023-11-26 11:05:20,278: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-11-26 11:05:20,576: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-11-26 11:05:20,649: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2023-11-26 11:05:20,698: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
