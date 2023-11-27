@@ -41,3 +41,12 @@ TypeError: makedirs() got an unexpected keyword argument 'exists_ok'
 [2023-11-26 11:05:20,698: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2023-11-27 11:33:07,765: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-11-27 11:33:07,768: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-27 11:33:07,769: INFO: common: created directory at: artifacts]
+[2023-11-27 11:33:07,769: INFO: common: created directory at: artifacts/training]
+[2023-11-27 11:36:52,580: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-11-27 11:36:52,583: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-27 11:36:52,585: INFO: common: created directory at: artifacts]
+[2023-11-27 11:36:52,586: INFO: common: created directory at: artifacts/training]
+[2023-11-27 11:36:52,895: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
